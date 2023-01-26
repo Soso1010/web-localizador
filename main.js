@@ -1,4 +1,5 @@
 status = "";
+objects = [];
 function setup() {
     canvas = createCanvas(380, 380)
     canvas.center()
@@ -21,4 +22,12 @@ function modelLoaded(){
 
 function draw(){
     image(video, 0, 0, 380, 380);
+    if(staus
+}
+function gotResult(error, results){
+    if (error){
+        console.log(error);
+    }
+    console.log(results);
+    objects = results;
 }
